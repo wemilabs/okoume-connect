@@ -9,6 +9,14 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "customer-assets.emergentagent.com",
       },
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+      },
+      {
+        protocol: "https",
+        hostname: "images.pexels.com",
+      },
     ],
   },
   reactCompiler: true,

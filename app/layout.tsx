@@ -1,14 +1,10 @@
 import type { Metadata } from "next";
-import { Geist, Inter } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
-
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
+import { ThemeProvider } from "@/components/providers/theme-provider";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -70,15 +66,18 @@ export const metadata: Metadata = {
 export default function RootLayout(props: LayoutProps<"/">) {
   const { children } = props;
   return (
-    <html
-      lang="fr"
-      className={`${inter.className} antialiased`}
-      suppressHydrationWarning
-    >
-      <body className="min-h-screen">
-        <Header />
-        {children}
-        <Footer />
+    <html lang="fr" suppressHydrationWarning>
+      <body className={`${inter.className} min-h-screen antialiased`}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Header />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
