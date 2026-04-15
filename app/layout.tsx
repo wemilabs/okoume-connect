@@ -35,18 +35,18 @@ export const metadata: Metadata = {
     },
   ],
   creator: "Wemi Labs Ltd",
-  metadataBase: new URL("https://okoumeconnect.com/"),
+  metadataBase: new URL("https://okoume-connect.vercel.app/"),
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://okoumeconnect.com/",
+    url: "https://okoume-connect.vercel.app/",
     title: "OKOUME CONNECT | Où votre vision rencontre nos solutions",
     description:
       "OKOUMÉ CONNECT est une société d'intermédiation commerciale qui crée des passerelles solides entre fournisseurs et acheteurs, avec un accompagnement sur mesure pour chaque partenaire — des PME locales aux grandes multinationales. Nous aidons également les entreprises en manque de moyens financiers à obtenir des crédits auprès des institutions financières, renforçant ainsi leur capacité opérationnelle.",
     siteName: "OKOUME CONNECT",
     images: [
       {
-        url: "/og-image.png",
+        url: "https://ubrw5iu3hw.ufs.sh/f/TFsxjrtdWsEIp9HaU5VIN8qB9zrPkx7h3YEvXTfboyKpdS2L",
         width: 1200,
         height: 630,
         alt: "OKOUME CONNECT | Où votre vision rencontre nos solutions",
@@ -58,7 +58,9 @@ export const metadata: Metadata = {
     title: "OKOUME CONNECT | Où votre vision rencontre nos solutions",
     description:
       "OKOUMÉ CONNECT est une société d'intermédiation commerciale qui crée des passerelles solides entre fournisseurs et acheteurs, avec un accompagnement sur mesure pour chaque partenaire — des PME locales aux grandes multinationales. Nous aidons également les entreprises en manque de moyens financiers à obtenir des crédits auprès des institutions financières, renforçant ainsi leur capacité opérationnelle.",
-    // images: [GENERAL_BRANDING_IMG_URL],
+    images: [
+      "https://ubrw5iu3hw.ufs.sh/f/TFsxjrtdWsEIp9HaU5VIN8qB9zrPkx7h3YEvXTfboyKpdS2L",
+    ],
     creator: "@mthlish",
   },
 };
@@ -71,7 +73,7 @@ export default function RootLayout(props: LayoutProps<"/">) {
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
-          enableSystem
+          enableSystem={false}
           disableTransitionOnChange
         >
           <Header />

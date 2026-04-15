@@ -17,6 +17,10 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "images.pexels.com",
       },
+      {
+        protocol: "https",
+        hostname: "ubrw5iu3hw.ufs.sh",
+      },
     ],
   },
   reactCompiler: true,
