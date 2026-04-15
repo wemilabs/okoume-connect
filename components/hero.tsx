@@ -1,5 +1,6 @@
 import { Mail, Phone } from "lucide-react";
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
 
 export function Hero() {
   return (
@@ -28,19 +29,22 @@ export function Hero() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <button
+              <Button
                 type="button"
-                className="inline-flex items-center justify-center gap-2 whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 shadow h-10 rounded-md bg-[#6CB947] hover:bg-[#5da839] text-white px-10 py-7 text-lg font-bold uppercase"
+                variant="green-cta"
+                size="green-cta"
+                className="h-auto font-bold uppercase shadow sm:w-fit sm:px-10"
               >
                 contactez-nous
-              </button>
+              </Button>
 
-              <button
+              <Button
                 type="button"
-                className="inline-flex items-center justify-center gap-2 whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 shadow-sm h-10 rounded-md border-2 border-white text-white hover:bg-white hover:text-[#0078D4] px-10 py-7 text-lg font-bold uppercase"
+                variant="outline"
+                className="h-auto border border-white bg-transparent p-4 font-bold uppercase text-white shadow-sm hover:bg-white hover:text-[#0078D4] sm:w-auto sm:px-10"
               >
                 nos services
-              </button>
+              </Button>
             </div>
 
             <div className="mt-12 pt-8 border-t border-white/20">

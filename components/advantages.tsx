@@ -1,5 +1,6 @@
 import { ArrowRight, CircleCheckBig } from "lucide-react";
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
 import { advantages } from "@/lib/data";
 
 export function Advantages() {
@@ -56,13 +57,15 @@ export function Advantages() {
                 <span>Expertise locale reconnue</span>
               </div>
             </div>
-            <button
+            <Button
               type="button"
-              className="inline-flex items-center justify-center gap-2 whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 shadow h-10 rounded-md bg-[#6CB947] hover:bg-[#5da839] text-white px-10 py-7 text-lg font-bold uppercase w-fit"
+              variant="green-cta"
+              size="green-cta"
+              className="h-auto font-bold uppercase shadow sm:w-fit sm:px-10"
             >
               Démarrer Maintenant
-              <ArrowRight className="ml-2 size-6" />
-            </button>
+              <ArrowRight className="size-4 ml-2" />
+            </Button>
           </div>
           <div className="h-full min-h-[400px] lg:min-h-0">
             <Image
