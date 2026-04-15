@@ -1,4 +1,5 @@
 import { Mail } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import { contactCards } from "@/lib/data";
 
 export function ContactUs() {
@@ -49,13 +50,15 @@ export function ContactUs() {
           <p className="text-gray-600 mb-6">
             Notre équipe vous répondra dans les plus brefs délais
           </p>
-          <button
+          <Button
             type="button"
-            className="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 shadow hover:bg-primary/90 h-10 rounded-md bg-linear-to-r from-[#0078D4] to-[#0066b8] hover:from-[#0066b8] hover:to-[#005599] text-white px-10 py-6 text-lg"
+            variant="blue-cta"
+            size="blue-cta"
+            className="h-auto bg-linear-to-r from-[#0078D4] to-[#0066b8] shadow hover:from-[#0066b8] hover:to-[#005599] sm:w-fit sm:px-10 font-bold uppercase"
           >
-            <Mail className="mr-2 size-5" />
+            <Mail className="size-4 mr-2" />
             Contactez-Nous Maintenant
-          </button>
+          </Button>
         </div>
       </div>
     </section>
