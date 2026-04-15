@@ -8,18 +8,15 @@ importers:
 
   .:
     dependencies:
-      eract-dom:
-        specifier: 0.0.1-security
-        version: 0.0.1-security
       next:
         specifier: 16.2.3
-        version: 16.2.3(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.4(react@19.2.5))(react@19.2.5)
+        version: 16.2.3(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       react:
         specifier: 19.2.5
         version: 19.2.5
       react-dom:
-        specifier: 19.2.4
-        version: 19.2.4(react@19.2.5)
+        specifier: 19.2.5
+        version: 19.2.5(react@19.2.5)
     devDependencies:
       '@biomejs/biome':
         specifier: 2.4.12
@@ -479,9 +476,6 @@ packages:
     resolution: {integrity: sha512-Qohcme7V1inbAfvjItgw0EaxVX5q2rdVEZHRBrEQdRZTssLDGsL8Lwrznl8oQ/6kuTJONLaDcGjkNP247XEhcA==}
     engines: {node: '>=10.13.0'}
 
-  eract-dom@0.0.1-security:
-    resolution: {integrity: sha512-yXqg6q1qFX92bb71g9n629Atp6jX604+bcajbpeAXgo+wHr/w+QHarSIF10V+iz48nxAlyn/7aQSzsNjtwUkcA==}
-
   graceful-fs@4.2.11:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
 
@@ -603,10 +597,10 @@ packages:
     resolution: {integrity: sha512-7a70Nsot+EMX9fFU3064K/kdHWZqGVY+BADLyXc8Dfv+mTLLVl6JzJpPaCZ2kQL9gIJvKXSLMHhqdRRjwQeFtw==}
     engines: {node: ^10 || ^12 || >=14}
 
-  react-dom@19.2.4:
-    resolution: {integrity: sha512-AXJdLo8kgMbimY95O2aKQqsz2iWi9jMgKJhRBAxECE4IFxfcazB2LmzloIoibJI3C12IlY20+KFaLv+71bUJeQ==}
+  react-dom@19.2.5:
+    resolution: {integrity: sha512-J5bAZz+DXMMwW/wV3xzKke59Af6CHY7G4uYLN1OvBcKEsWOs4pQExj86BBKamxl/Ik5bx9whOrvBlSDfWzgSag==}
     peerDependencies:
-      react: ^19.2.4
+      react: ^19.2.5
 
   react@19.2.5:
     resolution: {integrity: sha512-llUJLzz1zTUBrskt2pwZgLq59AemifIftw4aB7JxOqf1HY2FDaGDxgwpAPVzHU1kdWabH7FauP4i1oEeer2WCA==}
@@ -958,8 +952,6 @@ snapshots:
       graceful-fs: 4.2.11
       tapable: 2.3.2
 
-  eract-dom@0.0.1-security: {}
-
   graceful-fs@4.2.11: {}
 
   jiti@2.6.1: {}
@@ -1019,7 +1011,7 @@ snapshots:
 
   nanoid@3.3.11: {}
 
-  next@16.2.3(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.4(react@19.2.5))(react@19.2.5):
+  next@16.2.3(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5):
     dependencies:
       '@next/env': 16.2.3
       '@swc/helpers': 0.5.15
@@ -1027,7 +1019,7 @@ snapshots:
       caniuse-lite: 1.0.30001788
       postcss: 8.4.31
       react: 19.2.5
-      react-dom: 19.2.4(react@19.2.5)
+      react-dom: 19.2.5(react@19.2.5)
       styled-jsx: 5.1.6(react@19.2.5)
     optionalDependencies:
       '@next/swc-darwin-arm64': 16.2.3
@@ -1058,7 +1050,7 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  react-dom@19.2.4(react@19.2.5):
+  react-dom@19.2.5(react@19.2.5):
     dependencies:
       react: 19.2.5
       scheduler: 0.27.0
